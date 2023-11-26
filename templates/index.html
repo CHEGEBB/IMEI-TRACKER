@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMEI Tracker</title>
+</head>
+<body>
+    <h1>IMEI Tracker</h1>
+    <label>Select Device:</label>
+    <select id="deviceSelector">
+        <option value="Android">Android</option>
+        <option value="iPhone">iPhone</option>
+    </select>
+    <div id="androidSection">
+        <label for="imeiInput">Enter IMEI:</label>
+        <input type="text" id="imeiInput">
+    </div>
+    <div id="iphoneSection" style="display:none;">
+        <label for="appleIdInput">Enter Apple ID:</label>
+        <input type="text" id="appleIdInput">
+    </div>
+    <button onclick="trackDevice()">Track Device</button>
+    <button onclick="trackIPhoneDevice()">Track iPhone</button>
+
+    <!-- Link to the JavaScript file -->
+    <script src="./script.js"></script>
+</body>
+</html>
