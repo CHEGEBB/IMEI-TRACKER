@@ -3,21 +3,21 @@ import time
 import webbrowser
 from tkinter import *
 from tkinter import simpledialog
+from tkinter import messagebox
 
 # Function to authenticate with Google Find My Device service
 def authenticate(gmail, password):
+    # Simulate authentication for testing purposes
     print("Authenticating with Google Find My Device...")
-   
 
 # Function to authenticate with Apple Find My iPhone service
 def authenticate_apple(apple_id, password):
+    # Simulate authentication for testing purposes
     print("Authenticating with Apple Find My iPhone...")
-    
 
 # Function to request location information from Google Find My Device
 def request_location(imei):
     print("Requesting location from Google Find My Device...")
-
 
     # Simulate a successful request for testing purposes
     return "37.7749,-122.4194"
@@ -35,57 +35,89 @@ def parse_location(response_text):
         return None
 
 # Function to track the device and find the location
-def track(imei, gmail, password):
-    print(f"Tracking Android device with IMEI: {imei}, Gmail: {gmail}, Password: {password}")
+def track(imei, gmail, password, status_display):
+    status_display.config(state=NORMAL)
+    status_display.delete(1.0, END)  # Clear previous status messages
 
-    # Authenticate with Google Find My Device service
+    status_display.insert(END, f"Tracking Android device with IMEI: {imei}\n")
+
+    # Prompt for Gmail and Password on the same window
+    credentials = get_credentials()
+    if credentials:
+        gmail, password = credentials.split()
+
     authenticate(gmail, password)
 
-    # Perform the request to get the location information from Google Find My Device
     response_text = request_location(imei)
 
     if response_text is not None:
-        # Parse the response to extract the location information
         location = parse_location(response_text)
 
         if location:
-            # Open the browser to Google Find My Device with the location coordinates
             find_my_device_url = f"https://www.google.com/android/find?u=0&hl=en&source=android-browser&q={location}"
             webbrowser.open(find_my_device_url)
             time.sleep(5)  # Add a delay to allow the browser to open
+            status_display.insert(END, "Location found. Opening in browser.\n")
         else:
-            print("Location not found.")
+            status_display.insert(END, "Location not found.\n")
     else:
-        print("Error getting location information.")
+        status_display.insert(END, "Error getting location information.\n")
 
-    print("Tracking completed.")
-    print("Showing results...")
+    status_display.insert(END, "Tracking completed.\n")
+    status_display.insert(END, "Showing results...\n")
     time.sleep(2)
-    print("Opening browser...")
+    status_display.insert(END, "Opening browser...\n")
     time.sleep(2)
-    print("Done.")
+    status_display.insert(END, "Done.\n")
+    status_display.config(state=DISABLED)
 
-# Function to track iPhone device
-def track_iphone(apple_id, password):
-    print(f"Tracking iPhone device with Apple ID: {apple_id}, Password: {password}")
+# Function to get Gmail and Password from a separate window
+def get_credentials():
+    credentials_window = Tk()
+    credentials_window.title("Enter Credentials")
 
-    # Authenticate with Apple Find My iPhone service
-    authenticate_apple(apple_id, password)
+    gmail_label = Label(credentials_window, text="Enter Gmail:")
+    gmail_entry = Entry(credentials_window)
+    gmail_label.pack()
+    gmail_entry.pack()
 
-    # Implement the logic to track iPhone, e.g., redirecting to Apple's Find My iPhone website
+    password_label = Label(credentials_window, text="Enter Password:")
+    password_entry = Entry(credentials_window, show="*")  # Show '*' for password
+    password_label.pack()
+    password_entry.pack()
+
+    ok_button = Button(credentials_window, text="OK", command=credentials_window.destroy)
+    ok_button.pack()
+
+    credentials_window.wait_window()
+
+    gmail = gmail_entry.get()
+    password = password_entry.get()
+
+    return f"{gmail} {password}"  # Return credentials as a space-separated string
 
 # Function to handle the track button click
 def track_device():
     imei = imei_entry.get()
-    gmail = simpledialog.askstring("Gmail", "Enter your Gmail:")
-    password = simpledialog.askstring("Password", "Enter your password:")
-    track(imei, gmail, password)
+    track(imei, "", "", status_display)  # Pass empty strings for Gmail and Password initially
 
 # Function to handle the track iPhone button click
 def track_iphone_device():
     apple_id = apple_id_entry.get()
     password = simpledialog.askstring("Password", "Enter your password:")
-    track_iphone(apple_id, password)
+    status_display.config(state=NORMAL)
+    status_display.delete(1.0, END)  # Clear previous status messages
+    status_display.insert(END, f"Tracking iPhone device with Apple ID: {apple_id}\n")
+    authenticate_apple(apple_id, password)
+    status_display.insert(END, "Tracking completed.\n")
+    status_display.insert(END, "Done.\n")
+    status_display.config(state=DISABLED)
+
+# Function to clear the status display
+def clear_status():
+    status_display.config(state=NORMAL)
+    status_display.delete(1.0, END)
+    status_display.config(state=DISABLED)
 
 # GUI setup
 root = Tk()
@@ -132,5 +164,13 @@ track_button.pack()
 
 track_iphone_button = Button(root, text="Track iPhone", command=track_iphone_device)
 track_iphone_button.pack()
+
+# Clear button
+clear_button = Button(root, text="Clear Status", command=clear_status)
+clear_button.pack()
+
+# Status display
+status_display = Text(root, height=10, width=50, state=DISABLED)
+status_display.pack()
 
 root.mainloop()
