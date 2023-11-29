@@ -86,13 +86,20 @@ def get_credentials():
     password_label.pack()
     password_entry.pack()
 
-    ok_button = Button(credentials_window, text="OK", command=credentials_window.destroy)
+    # Function to store the entered credentials as instance variables
+    def ok_button_click():
+        credentials_window.gmail = gmail_entry.get()
+        credentials_window.password = password_entry.get()
+        credentials_window.destroy()
+
+    ok_button = Button(credentials_window, text="OK", command=ok_button_click)
     ok_button.pack()
 
     credentials_window.wait_window()
 
-    gmail = gmail_entry.get()
-    password = password_entry.get()
+    # Access entered values from instance variables
+    gmail = credentials_window.gmail
+    password = credentials_window.password
 
     return f"{gmail} {password}"  # Return credentials as a space-separated string
 
