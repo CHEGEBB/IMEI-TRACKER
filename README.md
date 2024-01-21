@@ -14,5 +14,18 @@ Follow these steps to run the IMEI Tracker script:
 1. Clone the repository:
    ```bash
    git clone https://github.com/CHEGEBB/IMEI-TRACKER.git
+   ```
+### Navigate to the repository:
+```bash
+cd IMEI-TRACKER
 ```
-   Navigate to the repository:cd IMEI-TRACKERInstall the required packages:pip install -r requirements.txtUsage:On Termux:Run the script in Termux:python Track.pyOn Desktop/Linux:Run the script on your desktop or Linux machine:python CyberTrack.pyThe GUI window will open, allowing you to:Select the device type (Android or iPhone)Input the required details.Click the "Track Device" button to initiate the tracking process.Note🛠️ Ensure that your Python environment is properly set up. The web interface components (HTML, JS, and CSS) are currently placeholders and will be developed in future updates.Contributing🤝 Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.Follow Me👣 Follow me at GitHub
+### Install the required packages:
+```bash
+pip install -r requirements.txt
+```
+## Usage:
+### On Termux:Run the script in Termux:
+```bash
+python Track.py
+```
+On Desktop/Linux:Run the script on your desktop or Linux machine:python CyberTrack.pyThe GUI window will open, allowing you to:Select the device type (Android or iPhone)Input the required details.Click the "Track Device" button to initiate the tracking process.Note🛠️ Ensure that your Python environment is properly set up. The web interface components (HTML, JS, and CSS) are currently placeholders and will be developed in future updates.Contributing🤝 Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.Follow Me👣 Follow me at GitHub
