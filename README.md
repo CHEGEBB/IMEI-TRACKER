@@ -36,8 +36,8 @@ python3 CyberTrack.py
 - **The GUI window will open, allowing you to:Select the device type (Android or iPhone)Input the required details.**
 - **Click the "Track Device" button to initiate the tracking process.**
 - **Note🛠️ Ensure that your Python environment is properly set up.**
-- ** The web interface components (HTML, JS, and CSS) are currently placeholders and will be developed in future updates.**
+- **The web interface components (HTML, JS, and CSS) are currently placeholders and will be developed in future updates.**
   ### Contributing🤝
-  -** Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.**
+  -**Contributions are welcome! Feel free to open issues or submit pull requests to help improve the project.**
   ## Follow Me👣 Follow me in GitHub
   - **CHEGEBB**
