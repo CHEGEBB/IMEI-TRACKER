@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_464fe02672ddd30f8a7e93d3d9c8e3a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_464fe02672ddd30f8a7e93d3d9c8e3a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_464fe02672ddd30f8a7e93d3d9c8e3a4 = L.map(
+                "map_464fe02672ddd30f8a7e93d3d9c8e3a4",
+                {
+                    center: [1.4419683, 38.4313975],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8eef58226e48b28ef9b58b81ee027927 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_8eef58226e48b28ef9b58b81ee027927.addTo(map_464fe02672ddd30f8a7e93d3d9c8e3a4);
+        
+    
+            var marker_ac436b3a20bca26ecda0d39c079f09e9 = L.marker(
+                [1.4419683, 38.4313975],
+                {}
+            ).addTo(map_464fe02672ddd30f8a7e93d3d9c8e3a4);
+        
+    
+            var icon_b8aa66549b68e02ceb88ae926937cc8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac436b3a20bca26ecda0d39c079f09e9.setIcon(icon_b8aa66549b68e02ceb88ae926937cc8f);
+        
+    
+        var popup_166bfd762075477bcc1e81f1d1ca392c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_895b25a312c472d425dcd707a60ec512 = $(`<div id="html_895b25a312c472d425dcd707a60ec512" style="width: 100.0%; height: 100.0%;">Merti, Kenya</div>`)[0];
+                popup_166bfd762075477bcc1e81f1d1ca392c.setContent(html_895b25a312c472d425dcd707a60ec512);
+            
+        
+
+        marker_ac436b3a20bca26ecda0d39c079f09e9.bindPopup(popup_166bfd762075477bcc1e81f1d1ca392c)
+        ;
+
+        
+    
+    
+            var marker_b4e3ae2756b295b446ef3aff704a5ff8 = L.marker(
+                [1.4419683, 38.4313975],
+                {}
+            ).addTo(map_464fe02672ddd30f8a7e93d3d9c8e3a4);
+        
+    
+            var icon_e0fd56b946024c54339a9d25ac47e2b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4e3ae2756b295b446ef3aff704a5ff8.setIcon(icon_e0fd56b946024c54339a9d25ac47e2b2);
+        
+    
+        var popup_ccc3159093c9c3a240c400c3b3df7126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f3c78def7be99410a9332a4529a7da5 = $(`<div id="html_1f3c78def7be99410a9332a4529a7da5" style="width: 100.0%; height: 100.0%;">Kenya</div>`)[0];
+                popup_ccc3159093c9c3a240c400c3b3df7126.setContent(html_1f3c78def7be99410a9332a4529a7da5);
+            
+        
+
+        marker_b4e3ae2756b295b446ef3aff704a5ff8.bindPopup(popup_ccc3159093c9c3a240c400c3b3df7126)
+        ;
+
+        
+    
+    
+            var poly_line_46cae1595cbabc81098e6017228c817a = L.polyline(
+                [[1.4419683, 38.4313975], [1.4419683, 38.4313975]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_464fe02672ddd30f8a7e93d3d9c8e3a4);
+        
+</script>
+</html>
