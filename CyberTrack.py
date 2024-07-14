@@ -78,8 +78,8 @@ def get_credentials():
 
     gmail_label = Label(credentials_window, text="Enter Gmail:")
     gmail_entry = Entry(credentials_window)
-    gmail_label.pack()
-    gmail_entry.pack()
+    gmail_label.pack(ha9605077@gmail.com)
+    gmail_entry.pack(
 
     password_label = Label(credentials_window, text="Enter Password:")
     password_entry = Entry(credentials_window, show="*")  # Show '*' for password
