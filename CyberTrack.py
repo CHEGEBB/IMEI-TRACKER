@@ -77,7 +77,7 @@ class LoginWindow:
     def __init__(self, on_login_success):
         self.window = Tk()
         self.window.title("🔐 Secure Login")
-        self.window.geometry("400x600")
+        self.window.geometry("400x500")
         self.window.configure(bg=ThemeColors.PRIMARY)
         
         self.on_login_success = on_login_success
@@ -360,7 +360,7 @@ class DeviceTracker:
     def __init__(self, user_email):
         self.root = Tk()
         self.root.title("📱 Advanced Device Tracker Pro")
-        self.root.geometry("600x800")
+        self.root.geometry("600x700")
         self.root.configure(bg='#2C3E50')
         
         # User info
@@ -493,7 +493,7 @@ class DeviceTracker:
         
         # Buttons
         self.button_frame = Frame(self.root, bg='#2C3E50')
-        self.button_frame.pack(pady=20)
+        self.button_frame.pack(pady=10)
         
         buttons = [
             ("Track Device", self.track_device, '#27AE60'),
