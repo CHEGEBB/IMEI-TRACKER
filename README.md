@@ -10,13 +10,13 @@ Since getting the PayPal.Me link is not working for you, let’s use a simpler a
 🚀 Welcome to the **IMEI Tracker Project!** This tool allows you to locate Android and iPhone devices using their IMEI or Apple ID.  
 
 🌟 **Affordable and Reliable Service:**  
-Lost your phone? For just **$10**, we can assist in tracking your device!
+Lost your phone? For just **$5**, we can assist in tracking your device!
 
 ---
 
 ## 💰 Pricing  
-- **$10 for Tracking your phone**  
-- **Bundle Deal:** $25 for three tracking requests (great for multiple devices or future use).  
+- **$5 for Tracking your phone**  
+- **Bundle Deal:** $10 for three tracking requests (great for multiple devices or future use).  
 
 ---
 
