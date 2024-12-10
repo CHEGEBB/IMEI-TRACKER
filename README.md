@@ -4,7 +4,6 @@ Since getting the PayPal.Me link is not working for you, let’s use a simpler a
 
 ### Updated README with PayPal Email Instructions
 
-```markdown
 # 📱 IMEI Tracker 🌐
 
 🚀 Welcome to the **IMEI Tracker Project!** This tool allows you to locate Android and iPhone devices using their IMEI or Apple ID.  
@@ -97,4 +96,3 @@ We welcome contributions! Feel free to open issues or submit pull requests to im
 ## Important Notes  
 - **Privacy is our priority:** We only process the IMEI or Apple ID for tracking purposes and do not store or misuse user data.  
 - **Disclaimer:** This service is intended to assist users in recovering lost devices and is not to be used for any illegal activities.  
-```
