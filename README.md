@@ -29,7 +29,7 @@ Lost your phone? For just **$5**, we can assist in tracking your device!
      - Log in to your PayPal account.  
      - Click **Send Money**.  
      - Enter my email: **chegephil24@gmail.com**  
-     - Send $10 (or $25 for the bundle).  
+     - Send $5 (or $10 for the bundle).  
 
 3. **Receive Tracking Information**  
    - Once payment is confirmed, I'll provide a tracking report within 24 hours.
