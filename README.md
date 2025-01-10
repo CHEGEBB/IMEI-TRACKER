@@ -1,57 +1,31 @@
 
+## IMEI Tracker Service  
+🔍 **Device Recovery Service**:  
+We offer assistance in recovering lost devices. To initiate the tracking service:  
+1. Send a **down payment of $10** to **chegephil24@gmail.com**.  
+2. Share the IMEI or Apple ID of the lost device.  
+
+> **Note:** This fee covers our initial efforts in locating your device. Please ensure you have legal ownership of the device before proceeding.  
+
+---
+
 ## Project Status  
 🚧 **Under Development:** The HTML, JS, and CSS components of the web interface are being actively developed.  
 
 ---
 
-## Getting Started  
-If you'd like to run this script yourself, here’s how:  
+## Collaboration Opportunities 🤝  
+We are open to collaborating with developers and tech enthusiasts to enhance this project.  
+If you have ideas or skills that can contribute to improving the IMEI Tracker, feel free to reach out!  
 
-### Prerequisites  
-🐍 **Python 3.x**  
-
-### Installation  
-1. Clone the repository:  
-```bash
-git clone https://github.com/CHEGEBB/IMEI-TRACKER.git
-```
-
-2. Navigate to the repository:  
-```bash
-cd IMEI-TRACKER
-```
-
-3. Install the required packages:  
-```bash
-pip install -r requirements.txt
-```
-
-### Usage  
-#### On Termux:  
-Run the script in Termux:  
-```bash
-python3 Track.py
-```
-
-#### On Desktop/Linux:  
-Run the script on your desktop or Linux machine:  
-```bash
-python3 CyberTrack.py
-```
-
-- **The GUI window will open, allowing you to:**  
-  - Select the device type (Android or iPhone)  
-  - Input the required details  
-  - Click the "Track Device" button to initiate the tracking process  
+- **Email:** chegephil24@gmail.com  
+- **GitHub:** [CHEGEBB](https://github.com/CHEGEBB)  
 
 ---
 
-## Contributing 🤝  
-We welcome contributions! Feel free to open issues or submit pull requests to improve the project.  
-
----
-
-## Follow Me 👣  
+## Contact Me  
+If you'd like to recover a lost device, collaborate, or learn more about this project, don't hesitate to get in touch:  
+- **Email:** chegephil24@gmail.com  
 - **GitHub:** [CHEGEBB](https://github.com/CHEGEBB)  
 
 ---
