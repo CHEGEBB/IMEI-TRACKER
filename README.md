@@ -3,12 +3,7 @@
 🔍 **Device Recovery Service**: 
 ## My website [https://brianchege.vercel.app/]
 We offer assistance in recovering lost devices. To initiate the tracking service:  
-1. Send a **down payment of $10** to **chegephil24@gmail.com**.  
-2. Share the IMEI or Apple ID of the lost device.  
-
-> **Note:** This fee covers our initial efforts in locating your device. Please ensure you have legal ownership of the device before proceeding.Reach out if you have the amount 
-
----
+Reach out **My website [https://brianchege.vercel.app/]**
 
 ## Project Status  
 🚧 **Under Development:** The HTML, JS, and CSS components of the web interface are being actively developed.  
