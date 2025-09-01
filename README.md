@@ -22,7 +22,6 @@ If you have ideas or skills that can contribute to improving the IMEI Tracker, f
 
 ## Contact Me  
 If you'd like to recover a lost device, collaborate, or learn more about this project, don't hesitate to get in touch:  
-- **Email:** chegephil24@gmail.com  
 - **GitHub:** [CHEGEBB](https://github.com/CHEGEBB)  
 
 ---
